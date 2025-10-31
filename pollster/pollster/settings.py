@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'pollster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pollster_DB',
+        'USER': 'lithaxanti',
+        'PASSWORD': 'Vuy@ni2011',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
